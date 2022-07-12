@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<head></head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/dark.min.css">
+<style>
+
+</style>
+<body>
+<div class="alert alert-primary text-center mb-5" role="alert">
+    <strong>JAVASCRIPT INTERVIEW QUESTIONS</strong>
+</div>
+<div class="container">
+<h4 class="text-primary">1. What is JavaScript?</h4>
+<p>JavaScript is a lightweight, interpreted programming language with object-oriented capabilities that allows you to build
+interactivity into otherwise static HTML pages. It can be used for both server-side, as well as client-side scripting and the good thing is it is known to provide the
+best results in every aspect. When it comes to building HTML WebPages, this language is often considered and is known to
+bring the most desired outcomes.</p>
+<h4 class="text-primary">2. Is JavaScript a case-sensitive language?</h4>
+<p>Yes, JavaScript is a case sensitive language. The language keywords, variables, function names, and any other
+identifiers must always be typed with a consistent capitalization of letters.</p>
+<h4 class="text-primary">3. Differences between declaring variables using var, let and const.</h4>
+<table class="table table-bordered w-50">
+    <tbody>
+        <tr>
+        <th>keyword</th>
+        <th>const</th>
+        <th>let</th>
+        <th>var</th>
+        </tr>
+        <tr>
+            <td>global scope</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td>function scope</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td>block scope</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>no</td>
+        </tr>
+        <tr>
+            <td>can be reassigned</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>yes</td>
+        </tr>
+    </tbody>
+</table>
+<h4 class="text-primary">4. How many data types are there in JavaScript? Can you name them?</h4>
+<p>There are 6 data types in JavaScript and they are:</p>
+<ul>
+    <li>Function</li>
+    <li>String</li>
+    <li>Undefined</li>
+    <li>Number</li>
+    <li>Boolean</li>
+    <li>Object</li>
+</ul>
+<h4 class="text-primary">5. Difference between “ == “ and “ === “ operators.</h4>
+<p>Both are comparison operators. The difference between both the operators is that “==” is used to compare values whereas,
+“ === “ is used to compare both values and types.</p>
+<pre><code class="language-js hljs language-xml"><script>var x = 2;
+var y = "2";
+(x == y)  // Returns true since the value of both x and y is the same
+(x === y) // Returns false since the typeof x is "number" and typeof y is "string"
+</script>
+</code></pre>
+<h4 class="text-primary">6. What is the difference between Attributes and Property?</h4>
+<p><strong>Attributes-</strong> provide more details on an element like id, type, value etc.</p>
+
+<p><strong>Property-</strong> is the value assigned to the property like type=”text”, value=’Name’ etc.</p>
+<h4 class="text-primary">7. List out the different ways an HTML element can be accessed in a JavaScript code.</h4>
+<p><strong>getElementById(‘idname’):</strong> Gets an element by its ID name<br>
+<strong>getElementsByClass(‘classname’):</strong> Gets all the elements that have the given classname.<br>
+<strong>getElementsByTagName(‘tagname’):</strong> Gets all the elements that have the given tag name.<br>
+<strong>querySelector():</strong> This function takes css style selector and returns the first selected element.</p>
+<h4 class="text-primary">8. In how many ways a JavaScript code can be involved in an HTML file?</h4>
+<ul>
+    <li>Inline</li>
+    <li>Internal</li>
+    <li>External</li>
+</ul>
+<h4 class="text-primary">9. What is the difference between null & undefined?</h4>
+<p>Undefined means a variable has been declared but has not yet been assigned a value. On the other hand, null is an
+assignment value. It can be assigned to a variable as a representation of no value. Also, undefined and null are two
+distinct types: undefined is a type itself (undefined) while null is an object.</p>
+<h4 class="text-primary">10. Explain strict mode and how can it be enabled??</h4>
+<p>Eliminates some JavaScript silent errors by changing them to throw errors.<br>
+Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be
+made to run faster than identical code that's not strict mode.<br>
+When you use strict mode, you cannot use implicitly declared variables, or assign a value to a read-only property, or
+add a property to an object that is not extensible.<br>
+You can enable strict mode by adding “use strict” at the beginning of a file, a program, or a function.
+</p>
+<h4 class="text-primary">11. What are arrow functions and what advantages are using it?</h4>
+<p>Arrow functions were introduced in the ES6 version of javascript. They provide us with a new and shorter syntax for
+declaring functions. Arrow functions can only be used as a function expression.</p>
+<pre><code class="language-js hljs language-xml"><script>// Traditional Function Expression
+var add = function (a, b) {
+    return a + b;
+}
+
+// Arrow Function Expression
+var arrowAdd = (a, b) => a + b;</script>
+</code></pre>
+<p>Arrow functions are declared without the function keyword. If there is only one returning expression then we don’t need
+to use the return keyword as well as in an arrow function. Also, for functions having just
+one line of code, curly braces { } can be omitted.</p>
+<h4 class="text-primary">12. What are callbacks? Why do we use callbacks?</h4>
+<p>A callback is a function that will be executed after another function gets executed. In javascript, functions are
+treated as first-class citizens, they can be used as an argument of another function, can be returned by another
+function, and can be used as a property of an object.<br>
+A callback function is a method that is sent as an input to another function (now let us name this other function
+"thisFunction"), and it is performed inside the thisFunction after the function has completed execution.</p>
+<h4 class="text-primary">13. What is Object Destructuring?</h4>
+<p>Object destructuring is a new way to extract elements from an object or an array.</p>
+<pre><code class="language-js hljs language-xml"><script>// Variable assignment.
+const foo = ['one', 'two', 'three'];
+
+const [one, two, three] = foo;
+console.log(one); // "one"
+console.log(two); // "two"
+console.log(three); // "three"
+</script>
+</code></pre>
+<pre><code class="language-js hljs language-xml"><script>// Variable assignment.
+const o = { p: 42, q: true };
+const { p, q } = o;
+
+console.log(p); // 42
+console.log(q); // true
+</script>
+</code></pre>
+<h4 class="text-primary">14. Explain what is Hoisting in Javascript?</h4>
+<p>Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.</p>
+<h4 class="text-primary">15. How does TypeOf Operator work?</h4>
+<p>JavaScript provides a typeof operator that can examine a value and tell you what type it is:</p>
+<pre><code class="language-js hljs language-xml"><script>var a;
+typeof a;				// "undefined"
+
+a = "hello world";
+typeof a;				// "string"
+
+a = 42;
+typeof a;				// "number"
+
+a = true;
+typeof a;				// "boolean"
+
+a = null;
+typeof a;				// "object" -- weird, bug
+
+a = undefined;
+typeof a;				// "undefined"
+
+a = { b: "c" };
+typeof a;				// "object"
+</script>
+</code></pre>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/go.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>
