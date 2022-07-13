@@ -8,19 +8,24 @@
 
 </style>
 <body>
-<div class="alert alert-primary text-center mb-5" role="alert">
+<div class="alert alert-danger text-center mb-5" role="alert">
     <strong>JAVASCRIPT INTERVIEW QUESTIONS</strong>
 </div>
 <div class="container">
-<h4 class="text-primary">1. What is JavaScript?</h4>
+    <div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">1. What is JavaScript?</h4>
 <p>JavaScript is a lightweight, interpreted programming language with object-oriented capabilities that allows you to build
 interactivity into otherwise static HTML pages. It can be used for both server-side, as well as client-side scripting and the good thing is it is known to provide the
 best results in every aspect. When it comes to building HTML WebPages, this language is often considered and is known to
 bring the most desired outcomes.</p>
-<h4 class="text-primary">2. Is JavaScript a case-sensitive language?</h4>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">2. Is JavaScript a case-sensitive language?</h4>
 <p>Yes, JavaScript is a case sensitive language. The language keywords, variables, function names, and any other
 identifiers must always be typed with a consistent capitalization of letters.</p>
-<h4 class="text-primary">3. Differences between declaring variables using var, let and const.</h4>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">3. Differences between declaring variables using var, let and const.</h4>
 <table class="table table-bordered w-50">
     <tbody>
         <tr>
@@ -55,7 +60,9 @@ identifiers must always be typed with a consistent capitalization of letters.</p
         </tr>
     </tbody>
 </table>
-<h4 class="text-primary">4. How many data types are there in JavaScript? Can you name them?</h4>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">4. How many data types are there in JavaScript? Can you name them?</h4>
 <p>There are 6 data types in JavaScript and they are:</p>
 <ul>
     <li>Function</li>
@@ -65,7 +72,9 @@ identifiers must always be typed with a consistent capitalization of letters.</p
     <li>Boolean</li>
     <li>Object</li>
 </ul>
-<h4 class="text-primary">5. Difference between “ == “ and “ === “ operators.</h4>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">5. Difference between “ == “ and “ === “ operators.</h4>
 <p>Both are comparison operators. The difference between both the operators is that “==” is used to compare values whereas,
 “ === “ is used to compare both values and types.</p>
 <pre><code class="language-js hljs language-xml"><script>var x = 2;
@@ -74,34 +83,49 @@ var y = "2";
 (x === y) // Returns false since the typeof x is "number" and typeof y is "string"
 </script>
 </code></pre>
-<h4 class="text-primary">6. What is the difference between Attributes and Property?</h4>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">6. What is the difference between Attributes and Property?</h4>
 <p><strong>Attributes-</strong> provide more details on an element like id, type, value etc.</p>
 
 <p><strong>Property-</strong> is the value assigned to the property like type=”text”, value=’Name’ etc.</p>
-<h4 class="text-primary">7. List out the different ways an HTML element can be accessed in a JavaScript code.</h4>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">7. List out the different ways an HTML element can be accessed in a JavaScript code.</h4>
 <p><strong>getElementById(‘idname’):</strong> Gets an element by its ID name<br>
 <strong>getElementsByClass(‘classname’):</strong> Gets all the elements that have the given classname.<br>
 <strong>getElementsByTagName(‘tagname’):</strong> Gets all the elements that have the given tag name.<br>
 <strong>querySelector():</strong> This function takes css style selector and returns the first selected element.</p>
-<h4 class="text-primary">8. In how many ways a JavaScript code can be involved in an HTML file?</h4>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">8. In how many ways a JavaScript code can be involved in an HTML file?</h4>
 <ul>
     <li>Inline</li>
     <li>Internal</li>
     <li>External</li>
 </ul>
-<h4 class="text-primary">9. What is the difference between null & undefined?</h4>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">9. What is the difference between null & undefined?</h4>
 <p>Undefined means a variable has been declared but has not yet been assigned a value. On the other hand, null is an
 assignment value. It can be assigned to a variable as a representation of no value. Also, undefined and null are two
 distinct types: undefined is a type itself (undefined) while null is an object.</p>
-<h4 class="text-primary">10. Explain strict mode and how can it be enabled??</h4>
-<p>Eliminates some JavaScript silent errors by changing them to throw errors.<br>
-Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be
-made to run faster than identical code that's not strict mode.<br>
-When you use strict mode, you cannot use implicitly declared variables, or assign a value to a read-only property, or
-add a property to an object that is not extensible.<br>
-You can enable strict mode by adding “use strict” at the beginning of a file, a program, or a function.
-</p>
-<h4 class="text-primary">11. What are arrow functions and what advantages are using it?</h4>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">10. Explain strict mode and how can it be enabled??</h4>
+<p>In 'Strict mode,' all forms of errors, including silent errors, will be thrown. As a result, debugging becomes
+a lot simpler. Thus programmer's chances of making an error are lowered.</p>
+<ul>
+    <li>Duplicate arguments are not allowed by developers.</li>
+    <li>In strict mode, you won't be able to use the JavaScript keyword as a parameter or function name.</li>
+    <li>The 'use strict' keyword is used to define strict mode at the start of the script. Strict mode is supported by all
+    browsers.</li>
+    <li>Engineers will not be allowed to create global variables in 'Strict Mode.</li>
+</ul>
+<p>You can enable strict mode by adding “use strict” at the beginning of a file, a program, or a function.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">11. What are arrow functions and what advantages are using it?</h4>
 <p>Arrow functions were introduced in the ES6 version of javascript. They provide us with a new and shorter syntax for
 declaring functions. Arrow functions can only be used as a function expression.</p>
 <pre><code class="language-js hljs language-xml"><script>// Traditional Function Expression
@@ -115,13 +139,17 @@ var arrowAdd = (a, b) => a + b;</script>
 <p>Arrow functions are declared without the function keyword. If there is only one returning expression then we don’t need
 to use the return keyword as well as in an arrow function. Also, for functions having just
 one line of code, curly braces { } can be omitted.</p>
-<h4 class="text-primary">12. What are callbacks? Why do we use callbacks?</h4>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">12. What are callbacks? Why do we use callbacks?</h4>
 <p>A callback is a function that will be executed after another function gets executed. In javascript, functions are
 treated as first-class citizens, they can be used as an argument of another function, can be returned by another
 function, and can be used as a property of an object.<br>
 A callback function is a method that is sent as an input to another function (now let us name this other function
 "thisFunction"), and it is performed inside the thisFunction after the function has completed execution.</p>
-<h4 class="text-primary">13. What is Object Destructuring?</h4>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">13. What is Object Destructuring?</h4>
 <p>Object destructuring is a new way to extract elements from an object or an array.</p>
 <pre><code class="language-js hljs language-xml"><script>// Variable assignment.
 const foo = ['one', 'two', 'three'];
@@ -140,9 +168,13 @@ console.log(p); // 42
 console.log(q); // true
 </script>
 </code></pre>
-<h4 class="text-primary">14. Explain what is Hoisting in Javascript?</h4>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">14. Explain what is Hoisting in Javascript?</h4>
 <p>Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.</p>
-<h4 class="text-primary">15. How does TypeOf Operator work?</h4>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">15. How does TypeOf Operator work?</h4>
 <p>JavaScript provides a typeof operator that can examine a value and tell you what type it is:</p>
 <pre><code class="language-js hljs language-xml"><script>var a;
 typeof a;				// "undefined"
@@ -166,6 +198,165 @@ a = { b: "c" };
 typeof a;				// "object"
 </script>
 </code></pre>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">16. Is javascript a statically typed or a dynamically typed language?</h4>
+<p>JavaScript is a dynamically typed language. In a dynamically typed language, the type of a variable is checked during
+run-time in contrast to a statically typed language, where the type of a variable is checked during compile-time.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">17. Explain “this” keyword.</h4>
+<p>The “this” keyword refers to the object that the function is a property of.<br>
+Which object depends on how this is being invoked (used or called).</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">18. What is NaN property in JavaScript?</h4>
+<p>NaN property represents the “Not-a-Number” value. It indicates a value that is not a legal number.<br>
+typeof of NaN will return a Number.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">19. How can you convert the string of any base to an integer in JavaScript?</h4>
+<p>The parseInt() function is used to convert numbers between different bases. It takes the string to be converted as its
+first parameter, and the second parameter is the base of the given string.</p>
+<pre><code class="language-js hljs language-xml"><script>let px = parseInt("4F", 16)
+document.write(px);
+</script>
+</code></pre>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">19. What is the use of Void (0)?</h4>
+<p>Void(0) is used to prevent the page from refreshing, and parameter “zero” is passed while calling.<br>
+Void(0) is used to call another method without refreshing the page.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">20. What is break and continue statements?</h4>
+<p>Break statement exits from the current loop.<br>
+Continue statement continues with next statement of the loop.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">21. What are the different types of errors in JavaScript?</h4>
+<p>There are three types of errors:</p>
+<ul>
+    <li><strong>Load time errors:</strong> Errors that come up when loading a web page, like improper syntax errors, are known as Load time
+    errors and generate the errors dynamically.</li>
+    <li><strong>Runtime errors:</strong> Errors that come due to misuse of the command inside the HTML language.</li>
+    <li><strong>Logical Errors:</strong> These are the errors that occur due to the bad logic performed on a function with a different operation.</li>
+</ul>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">22. Explain call(), apply() and, bind() methods.</h4>
+<p><strong>call():</strong> This method calls a function with a given this value and arguments provided individually.</p>
+<p><strong>apply():</strong> This method calls a function with a given this value, and arguments provided as an array.</p>
+<p><strong>bind():</strong> This method returns a new function, where the value of “this” keyword will be bound to the owner object, which is
+provided as a parameter.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">23. What boolean operators can be used in JavaScript?</h4>
+<p>The ‘<strong>And</strong>’ Operator (<strong>&&</strong>), ‘<strong>Or</strong>’ Operator (<strong>||</strong>), and the ‘<strong>Not</strong>’ Operator (<strong>!</strong>) can be used in JavaScript.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">24. What is Loop in JavaScript? How many types of Loop in JavaScript?</h4>
+<p>Loops are useful when you repeatedly execute the same lines of code a specific number of times or as long as a specific
+condition is true.</p>
+<p><strong>Type of Loops</strong></p>
+<ul>
+    <li>for - loops through a block of code a number of times</li>
+    <li>for/in - loops through the properties of an object</li>
+    <li>for/of - loops through the values of an iterable object</li>
+    <li>while - loops through a block of code while a specified condition is true</li>
+    <li>do/while - also loops through a block of code while a specified condition is true</li>
+</ul>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">25. What is the working of timers in JavaScript?</h4>
+<p>Timers are used to execute a piece of code at a set time or repeat the code in a given interval. This is done by using
+the functions setTimeout, setInterval, and clearInterval.</p>
+<ul>
+    <li>The <strong>setTimeout</strong> function is used to start a timer that calls a particular function after the mentioned delay.</li>
+    <li>The <strong>setInterval</strong> function repeatedly executes the given function in the mentioned delay and only halts when canceled. </li>
+    <li>The <strong>clearInterval</strong> function instructs the timer to stop.</li>
+</ul>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+    <h4 class="text-danger">26. What is the difference between ViewState and SessionState?</h4>
+    <p><strong>‘ViewState’</strong> is specific to a page in a session.<br>
+    <strong>‘SessionState’</strong> is specific to user-specific data that can be accessed across all web application pages.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">27. What is the function of the delete operator?</h4>
+<p>The delete keyword is used to delete the property as well as its value.</p>
+<pre><code class="language-js hljs language-xml"><script>var student = { age: 20, batch: "ABC" };
+delete student.age;
+document.write(student.age);
+</script>
+</code></pre>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">28. What are all the types of Pop up boxes available in JavaScript?</h4>
+<ul>
+    <li><strong>Alert</strong> - When an alert box pops up, the user will have to click "OK" to proceed.</li>
+    <li><strong>Confirm</strong> - When a confirm box pops up, the user will have to click either "OK" or "Cancel" to proceed.</li>
+    <li><strong>Prompt</strong> - When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.</li>
+</ul>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">29. What are escape characters?</h4>
+<p>Escape characters (Backslash) is used when working with special characters like single quotes, double quotes,
+apostrophes, and ampersands. Place backslash before the characters to make it display.</p>
+<pre><code class="language-js hljs language-xml"><script>document.write ("I m a 'good' boy.");
+document.write ("I m a \"good\" boy.");
+</script>
+</code></pre>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">30. Which keywords are used to handle exceptions?</h4>
+<p><strong>try</strong>, <strong>catch</strong> and <strong>finally</strong> is used to handle exceptions in the JavaScript</p>
+<p>Please input a number between 5 and 10:</p>
+    
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+    
+<p id="p01"></p>
+<pre><code class="language-js hljs language-xml language-html"><script>function myFunction() {
+    const message = document.getElementById("p01");
+    message.innerHTML = "";
+    let x = document.getElementById("demo").value;
+    try {
+        if (x == "") throw "is empty";
+        if (isNaN(x)) throw "is not a number";
+        x = Number(x);
+        if (x > 10) throw "is too high";
+        if (x < 5) throw "is too low";
+    }
+    catch (err) {
+        message.innerHTML = "Input " + err;
+    }
+    finally {
+        document.getElementById("demo").value = "";
+    }
+}
+</script>
+</code></pre>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">31. What is a window.onload and onDocumentReady?</h4>
+<p><strong>onload</strong> function is not run until all the information on the page is loaded. This leads to a substantial delay before
+any code is executed.<br>
+<strong>onDocumentReady</strong> loads the code just after the DOM is loaded. This allows early manipulation of the code.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">32. What is event bubbling?</h4>
+<p>JavaScript allows DOM elements to be nested inside each other. In such a case, if the handler of the child is clicked,
+the handler of the parent will also work as if it were clicked too.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">33. Why do we use the word “debugger” in javascript?</h4>
+<p>The debugger keyword stops the execution of JavaScript, and calls (if available) the debugging function.<br>
+This has the same function as setting a breakpoint in the debugger.<br>
+If no debugging is available, the debugger statement has no effect.<br>
+With the debugger turned on, this code will stop executing before it executes the third line.</p>
+</div>
+
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/go.min.js"></script>
