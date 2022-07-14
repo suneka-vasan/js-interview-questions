@@ -356,6 +356,215 @@ This has the same function as setting a breakpoint in the debugger.<br>
 If no debugging is available, the debugger statement has no effect.<br>
 With the debugger turned on, this code will stop executing before it executes the third line.</p>
 </div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">34. How will you empty an array in JavaScript?</h4>
+<p>There are multiple ways of emptying an array in JavaScript. Four of the most important ones are:</p>
+<pre><code class="language-js hljs language-xml language-html"><script>//By assigning an empty array:
+var array1 = [1, 22, 24, 46];
+array1 = [];
+
+//By assigning array length to 0:
+var array1 = [1, 22, 24, 46];
+array1.length = 0;
+
+//By popping the elements of the array:
+var array1 = [1, 22, 24, 46];
+while (array1.length > 0) {
+    array1.pop();
+}
+
+//By using the splice array function:
+var array1 = [1, 22, 24, 46];
+array1.splice(0, array1.length)
+</script>
+</code></pre>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">35. What is the for-in loop in JavaScript?</h4>
+<p>The for-in loop is meant to be used for looping through the properties of a JavaScript object—every iteration of the
+loop results in a property of the object getting associated with the variable name. The loop continues until all the
+object properties are exhausted.</p>
+<pre><code class="language-js hljs language-xml language-html"><script>const person = { fname: "John", lname: "Doe", age: 25, area: "Chennai" };
+
+let txt = "";
+for (let x in person) {
+    txt += person[x] + " ";
+}
+
+document.write(txt);
+</script>
+</code></pre>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">36. What are screen objects? State their various properties.</h4>
+<p>To read the information from the client’s screen, screen objects are used in JavaScript. Properties of screen objects
+are:</p>
+<ul>
+<li><strong>AvailHeight</strong> - Gives out the height of the client screen (Excludes taskbar)</li>
+<li><strong>AvailWidth</strong> - Gives out the width of the client screen (Excludes taskbar)</li>
+<li><strong>ColorDepth</strong> - Gives out the bit depth of images supported by the client screen.</li>
+<li><strong>Height</strong> - Gives out the total height of the client screen.</li>
+<li><strong>Width</strong> - Gives out the total width of the client screen.</li>
+</ul>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">37. How can a page be forced to load another page in JavaScript?</h4>
+<pre><code class="hljs language-html">&lt;script language="JavaScript" type="text/javascript"&gt;
+<span class="text-muted">&lt;!-- location.href = "desired location path"; //--&gt;</span>
+&lt;/script&gt;
+</code></pre>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">38. How closures work in JavaScript?</h4>
+<p>The closure is a locally declared variable related to a function that stays in memory when it has returned. The closure contains all local variables that were in-scope at the time of the closure creation.</p>
+<pre><code class="hljs language-js"><script>function greet(message) {
+    document.write(message);
+}
+function greeter(name, age) {
+    return name + " says Hey!! He is " + age + " years old";
+}
+var message = greeter("Akhil", 26);
+greet(message);
+
+</script>
+</code></pre>
+<pre><code class="hljs language-js"><script>function greeter(name, age) {
+    var message = name + " says Hey!! He is " + age + " years old";
+    return function greet() {
+        document.write(message);
+    };
+}
+
+// Generate the closure
+var AkhilGreeter = greeter("Akhil", 26);
+
+// Use the closure
+AkhilGreeter();
+
+</script>
+</code></pre>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">39. What are the decodeURI() and encodeURI()?</h4>
+<p>EncodeURl() is used to convert URL into their hex coding. And DecodeURI() is used to convert the encoded URL back to
+normal.</p>
+<pre><code class="hljs language-js language-html"><script>var uri = "my test.asp?name=ståle&car=saab";
+
+document.write(encodeURI(uri) + " ; ");
+
+document.write(decodeURI(uri));
+
+</script>
+</code></pre>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">40. What is IIFEs?</h4>
+<p>It’s an Immediately-Invoked Function Expression or IIFE for short. It executes immediately after it’s created:</p>
+<pre><code class="hljs language-js language-html"><script>(function IIFE() {
+    document.write("Hello!");
+})();
+
+</script>
+</code></pre>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">41. What is Coercion in JavaScript?</h4>
+<p>In JavaScript conversion between different two build-in types called coercion. Coercion comes in two forms in
+JavaScript: explicit and implicit.
+</p>
+<pre><code class="hljs language-js language-html"><script>//explicit coercion:
+
+var a = "42";
+
+var b = Number(a);
+
+a;	// "42"
+b;	// 42 -- the number!
+</script>
+</code></pre>
+<pre><code class="hljs language-js language-html"><script>//implicit coercion:
+var a = "42";
+
+var b = a * 1;	// "42" implicitly coerced to 42 here
+
+a;	// "42"
+b;	// 42 -- the number!
+</script>
+</code></pre>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">42. Name some of the JavaScript Frameworks.</h4>
+<p>A JavaScript framework is an application framework written in JavaScript. It differs from a JavaScript library in its
+control flow. There are many JavaScript Frameworks available but some of the most commonly used frameworks are:</p>
+<ul>
+    <li>Angular</li>
+    <li>React</li>
+    <li>Vue</li>
+</ul>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">43. What do you understand by cookies? How will you create a cookie using JavaScript?</h4>
+<p>A cookie is simply data, usually small, sent from a website and stored on the user’s computer by the web browser used to
+access the website. It is a reliable way for websites to remember stateful information and record the user's browsing
+activity.<br><br>
+
+The most basic way of creating a cookie using JS is to assign a string value to the document. Cookie object. The general
+syntax is:</p>
+<pre><code class="hljs language-js language-html"><script>document.cookie = "key1 = value1; key2 = value2; ... ; keyN= valueN; expires = date";</script>
+</code></pre>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">44. How to read a cookie using JavaScript?</h4>
+<p>Reading a cookie is just as simple as writing one, because the value of the document.cookie object is the cookie. So you
+can use this string whenever you want to access the cookie.</p>
+<ul>
+<li>The document.cookie string will keep a list of name = value pairs separated by semicolons, where name is the name of a
+cookie and value is its string value.</li>
+<li>You can use strings’ split() function to break the string into key and values.</li>
+</ul>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">45. How to delete a cookie using JavaScript?</h4>
+<p>If you want to delete a cookie, you just need to set the expiration date to a time in the past. You should define the cookie path to ensure that you delete the
+right cookie. Some browsers will not let you delete a cookie if you don’t specify the path.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">46. What is negative Infinity?</h4>
+<p>Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">47. What is the difference between Local storage & Session storage?</h4>
+<p><strong>Local Storage</strong> – The data is not sent back to the server for every HTTP request (HTML, images, JavaScript, CSS, etc) –
+reducing the amount of traffic between client and server. It will stay until it is manually cleared through settings or
+program.</p>
+<p><strong>Session Storage</strong> – It is similar to local storage; the only difference is while data stored in local storage has no
+expiration time, data stored in session storage gets cleared when the page session ends. Session Storage will leave when
+the browser is closed.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">48. What would be the result of 2+5+”3″?</h4>
+<p>Since 2 and 5 are integers, they will be added numerically. And since 3 is a string, its concatenation will be done. So
+the result would be 73. The ” ” makes all the difference here and represents 3 as a string and not a number.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+    <h4 class="text-danger">49. What do you mean by Self Invoking Functions?</h4>
+    <p>Without being requested, a self-invoking expression is automatically invoked (initiated). If a function expression is
+    followed by (), it will execute automatically. A function declaration cannot be invoked by itself.<br><br>
+    
+    Normally, we declare a function and call it, however, anonymous functions may be used to run a function automatically
+    when it is described and will not be called again. And there is no name for these kinds of functions.</p>
+</div>
+<div class="border p-3 rounded border bg-light mb-3">
+<h4 class="text-danger">50. What is the difference between exec () and test () methods in javascript?</h4>
+<p>test () and exec () are RegExp expression methods used in javascript.</p>
+<ul>
+    <li>We'll use exec () to search a string for a specific pattern, and if it finds it, it'll return the pattern directly;
+    else, it'll return an 'empty' result.</li>
+    <li>We will use a test () to find a string for a specific pattern. It will return the Boolean value 'true' on finding the
+    given text otherwise, it will return 'false'.</li>
+</ul>
+</div>
+
 
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
